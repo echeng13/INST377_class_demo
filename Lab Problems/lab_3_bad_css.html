@@ -4,32 +4,98 @@
 <head>
   <title>Sample HTML Demonstration Page</title>
   <style>
-  /* 
-    Place your fresh CSS styles here to help organize the page
-  */
+
+.wrapper {
+  width: 60%;
+  margin:auto;
+  height: 100vh;
+  background: grey;
+  text-align:center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#left, #right {
+    padding: 10px;
+    background: red;
+    width: 250px;
+    height: 75px;
+    margin: 10px;
+  }
+
+.head {
+ /* display: flex;
+  flex-direction: column;*/
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 70px;
+
+}
+.link {
+  text-decoration: underline;
+  color: purple;
+  margin-bottom: 10px;
+  margin-top: -40px;
+}
+.second_container {
+  background: pink;
+  text-justify: center;
+  text-align: center;
+  flex-flow: column;
+  justify-content: center;
+  flex-direction: center;
+  align-items: start;
+  align-self: center;
+  height: 140px;
+  line-height: 140px;
+}
+
+.second_textbox {
+  background: lightblue;
+  width: 400px;
+  height: 100px;
+  justify-content: space-around;
+  display: flex;
+  line-height: 65px;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  font-style: bold;
+  display: inline-block;
+}
+
   </style>
 </head>
 
 <body>
   <div class="wrapper">
     <div class="head" id="start">
-      make me a headline
+      Sample Header
+    </div>
+    <div class="link">
+      <br></br>
+      anchor tag to nowhere
     </div>
     <div class="second_container">
       <div class="interior">
       hello
     </div>
     </div>
-    <div class="container">
-      <div>
-        First
+    <span class="container" id="boxes">
+      <div class="container" id="left">
+        click me I'm great
       </div>
-      <div>
-        Second
+      <div class="container" id="right"> 
       </div>
-      <div class="second textbox">
+      </span>
+      <div class="second_textbox">
         <p>
-          Third
+          World #2
         </p>
       </div>
     </div>

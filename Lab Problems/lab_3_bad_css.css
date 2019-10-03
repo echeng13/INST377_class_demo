@@ -6,26 +6,24 @@ doc {
 }
 
 .container {
-  body: purple;
+  color: purple;
   margin: 0;
 }
 
-  div {
-    color: red
+.div {
+    color: red;
     width: 100px;
     height: 42px;
   }
 
-newsline {
+.newsline {
   font-size: 42px;
-  font-style: bold;
-  font-weight: 400;
+  font-weight: bold;
 }
 
-wrapper {
+.wrapper {
   width: 60%;
   height: 100vh;
-  width: 22vh;
   background: grey;
 }
 
